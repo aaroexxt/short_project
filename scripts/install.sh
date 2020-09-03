@@ -4,7 +4,7 @@ pushd stanford_project &&
 
 # install chai3d
 if [ ! -d "chai3d" ]; then
-	git clone git@github.com:manips-sai-org/chai3d.git || exit 1
+	git clone https://github.com/manips-sai-org/chai3d.git || exit 1
 fi
 pushd chai3d &&
 mkdir -p build &&
@@ -14,7 +14,7 @@ popd && popd &&
 
 # install sai2-urdfreader
 if [ ! -d "sai2-urdfreader" ]; then
-	git clone git@github.com:manips-sai-org/sai2-urdfreader.git || exit 1
+	git clone https://github.com/manips-sai-org/sai2-urdfreader.git || exit 1
 fi
 pushd sai2-urdfreader &&
 mkdir -p build &&
@@ -24,7 +24,7 @@ popd && popd &&
 
 # install sai2-model
 if [ ! -d "sai2-model" ]; then
-	git clone git@github.com:manips-sai-org/sai2-model.git || exit 1
+	git clone https://github.com/manips-sai-org/sai2-model.git || exit 1
 fi
 pushd sai2-model &&
 sh install.sh &&
@@ -32,7 +32,7 @@ popd &&
 
 # install sai2-graphics
 if [ ! -d "sai2-graphics" ]; then
-	git clone git@github.com:manips-sai-org/sai2-graphics.git || exit 1
+	git clone https://github.com/manips-sai-org/sai2-graphics.git || exit 1
 fi
 pushd sai2-graphics &&
 mkdir -p build &&
@@ -42,7 +42,7 @@ popd && popd &&
 
 # install sai2-common
 if [ ! -d "sai2-common" ]; then
-	git clone git@github.com:manips-sai-org/sai2-common.git || exit 1
+	git clone https://github.com/manips-sai-org/sai2-common.git || exit 1
 fi
 pushd sai2-common &&
 mkdir -p build &&
@@ -67,7 +67,7 @@ popd && popd &&
 
 # install project code
 if [ ! -d "short_project" ]; then
-	git clone git@github.com:shameekganguly/short_project.git || exit 1
+	git clone https://github.com/shameekganguly/short_project.git || exit 1
 fi
 pushd short_project &&
 sh build.sh
